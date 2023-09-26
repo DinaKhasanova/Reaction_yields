@@ -4,7 +4,7 @@ from pytorch_lightning import Trainer
 from pytorch_lightning.loggers import CSVLogger
 from torch.utils.data import TensorDataset, DataLoader
 
-from yield_model_with_fixes import Net, lr_wm
+from yield_model_with_LrGcOptimizer import Net, lr_wm
 
 if __name__ == '__main__':
     data = np.load('retro_array.npz')
